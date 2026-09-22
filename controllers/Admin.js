@@ -96,7 +96,8 @@ const getMonthIndex = (monthName) => {
 
 // API Endpoint to get Admin records by date range
 export const getAdminRecordsByDateRange = async (req, res) => {
-    const { from, to } = req.body;
+    const from = req.query.from || (req.body && req.body.from);
+    const to = req.query.to || (req.body && req.body.to);
 
     if (!from || !to) {
         return res.status(400).json({ message: 'Both "from" and "to" dates are required.' });
@@ -118,53 +119,30 @@ export const getAdminRecordsByDateRange = async (req, res) => {
     const toMonthIndex = toDate.month(); // 0-based index for months
 
     try {
-        // Find Admin records within the specified range
+        // Find Admin records within the year range
         const adminRecords = await AdminModel.findAll({
             where: {
-                [Op.or]: [
-                    // Records in the starting year and month range
-                    {
-                        [Op.and]: [
-                            { Tahun: fromYear },
-                            { Bulan: { [Op.gte]: getMonthName(fromMonthIndex) } }
-                        ]
-                    },
-                    // Records in the ending year and month range
-                    {
-                        [Op.and]: [
-                            { Tahun: toYear },
-                            { Bulan: { [Op.lte]: getMonthName(toMonthIndex) } }
-                        ]
-                    },
-                    // Records between the starting and ending years
-                    {
-                        [Op.and]: [
-                            { Tahun: { [Op.gt]: fromYear } },
-                            { Tahun: { [Op.lt]: toYear } }
-                        ]
-                    }
-                ]
-            }
+                Tahun: {
+                    [Op.between]: [fromYear, toYear]
+                }
+            },
+            order: [['Tahun', 'ASC']]
         });
 
-        // Filter out records to ensure exact match for the range
+        // Filter out records to ensure exact match for the month/year range
         const filteredRecords = adminRecords.filter(record => {
-            const recordYear = record.Tahun;
+            const recordYear = Number(record.Tahun);
             const recordMonthIndex = getMonthIndex(record.Bulan);
 
             if (recordYear === fromYear && recordYear === toYear) {
-                // Between the same year range
                 return recordMonthIndex >= fromMonthIndex && recordMonthIndex <= toMonthIndex;
             }
             if (recordYear === fromYear) {
-                // From year to end
                 return recordMonthIndex >= fromMonthIndex;
             }
             if (recordYear === toYear) {
-                // To year from start
                 return recordMonthIndex <= toMonthIndex;
             }
-            // Between years
             return recordYear > fromYear && recordYear < toYear;
         });
 

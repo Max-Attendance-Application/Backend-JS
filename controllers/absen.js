@@ -359,9 +359,59 @@ export const createAbsenTapout = async (req, res) => {
 };
 
 export const updateAbsen = async (req, res) => {
+    try {
+        const absenId = parseInt(req.params.id, 10);
+        if (isNaN(absenId)) {
+            return res.status(400).json({ message: 'Invalid ID format' });
+        }
 
-}
+        const absen = await AbsenModel.findByPk(absenId);
+        if (!absen) {
+            return res.status(404).json({ message: 'Absen record not found' });
+        }
+
+        if (req.role !== 'admin' && absen.userId !== req.userId) {
+            return res.status(403).json({ message: 'Access denied' });
+        }
+
+        const { tapin, tapout, latitudeTapIn, longitudeTapIn, latitudeTapOut, longitudeTapOut } = req.body;
+        if (tapin) absen.tapin = tapin;
+        if (tapout) absen.tapout = tapout;
+        if (latitudeTapIn !== undefined) absen.latitudeTapIn = latitudeTapIn;
+        if (longitudeTapIn !== undefined) absen.longitudeTapIn = longitudeTapIn;
+        if (latitudeTapOut !== undefined) absen.latitudeTapOut = latitudeTapOut;
+        if (longitudeTapOut !== undefined) absen.longitudeTapOut = longitudeTapOut;
+        if (req.file) absen.photo = req.file.path;
+
+        await absen.save();
+
+        res.status(200).json({ message: 'Absen record updated successfully', data: absen });
+    } catch (error) {
+        res.status(500).json({ message: 'Error updating absen record', error: error.message });
+    }
+};
 
 export const deleteAbsen = async (req, res) => {
+    try {
+        const absenId = parseInt(req.params.id, 10);
+        if (isNaN(absenId)) {
+            return res.status(400).json({ message: 'Invalid ID format' });
+        }
 
-}
+        const absen = await AbsenModel.findByPk(absenId);
+        if (!absen) {
+            return res.status(404).json({ message: 'Absen record not found' });
+        }
+
+        if (req.role !== 'admin') {
+            return res.status(403).json({ message: 'Access denied: admin only' });
+        }
+
+        await absen.destroy();
+
+        res.status(200).json({ message: 'Absen record deleted successfully' });
+    } catch (error) {
+        res.status(500).json({ message: 'Error deleting absen record', error: error.message });
+    }
+};
+

@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "start": "node index.js",
     "migrate": "npx sequelize-cli db:migrate",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -31,6 +32,7 @@
     "path": "^0.12.7",
     "pg": "^8.12.0",
     "sequelize": "^6.37.3",
-    "transporter": "^0.0.1"
+    "transporter": "^0.0.1",
+    "uuid": "^9.0.1"
   }
 }

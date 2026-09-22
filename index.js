@@ -88,7 +88,7 @@ app.use(
   cors({
     credentials: true,
     //untuk frontend akses
-    origin: "http://localhost:8080",
+    origin: process.env.CLIENT_URL || "http://localhost:5173",
   })
 );
 
@@ -98,7 +98,8 @@ app.use(AbsenRoute);
 app.use(AuthRoute);
 app.use(AdminRoute);
 
-/*  store.sync();  */
+store.sync();
+
 
 // Gunakan multer sebagai middleware untuk rute yang memerlukan unggahan file
 app.post("/tapin", uploadSingle, (req, res) => {

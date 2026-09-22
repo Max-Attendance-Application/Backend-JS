@@ -221,8 +221,8 @@ export const uploadProfileImage = async (req, res) => {
         return res.status(400).json({ msg: 'No file uploaded' });
       }
   
-      const userId = req.userId; // Assuming you get the user ID from the request (e.g., from a verified token)
-      const newImageUrl = req.file.path; // Cloudinary URL
+      const userId = req.userId;
+      const newImageUrl = req.file.path;
   
       const user = await UserModel.findOne({
         where: { id: userId }
@@ -235,17 +235,15 @@ export const uploadProfileImage = async (req, res) => {
       // Delete old profile image
       if (user.urlprofile) {
         const oldImagePublicId = user.urlprofile.split('/').pop().split('.')[0];
-        await cloudinary.uploader.destroy(oldImagePublicId);
+        try {
+          await cloudinary.uploader.destroy(oldImagePublicId);
+        } catch (e) {
+          console.warn('Could not delete old cloudinary image:', e.message);
+        }
       }
   
-      // Upload new image to Cloudinary
-      const newImagePublicId = `profile_photos/${userId}_${Date.now()}`;
-      const uploadResult = await cloudinary.uploader.upload(req.file.path, {
-        public_id: newImagePublicId, // Set the public ID
-      });
-  
       // Update the user's profile image URL in the database
-      user.urlprofile = uploadResult.secure_url; // Use the URL from the upload result
+      user.urlprofile = newImageUrl;
       await user.save();
   
       res.status(200).json({ msg: 'Profile image uploaded successfully', url: user.urlprofile });
@@ -335,7 +333,8 @@ export const forgotPassword = async (req, res) => {
       const token = await generatePasswordResetToken(user);
 
       // Send the email with the token
-      const resetLink = `http://localhost:5000/reset-password.html?token=${token}`;
+      const clientUrl = process.env.CLIENT_URL || 'http://localhost:5173';
+      const resetLink = `${clientUrl}/reset-password?token=${token}`;
       const mailOptions = {
           from: process.env.EMAIL_USER,
           to: user.email,
@@ -350,7 +349,7 @@ export const forgotPassword = async (req, res) => {
                 <p style="font-size: 16px; color: #555;">
                     Alternatively, you can click the link below to reset your password:
                 </p>
-                <a href="LINK RESET PW NYA, Berisi 3 field Token PW dan Confirm PW" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: #fff; text-decoration: none; border-radius: 5px;">
+                <a href="${resetLink}" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: #fff; text-decoration: none; border-radius: 5px;">
                     Reset Password
                 </a>
                 <p style="font-size: 16px; color: #555;">

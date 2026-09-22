@@ -1,0 +1,1911 @@
+{
+  "info": {
+    "_postman_id": "7288c4a7-ccf3-4276-a8d7-61878408551c",
+    "name": "API Documentation Max Samasta",
+    "description": "PT. Max Samasta Grup\n\nmerupakan sebuah perusahaan yang bergerak di bidang pengembangan Teknologi dan Bisnis Digital yang dapat membantu berbagai macam bisnis dari berbagai ukuran mulai dari bisnis rumahan, UMKM, bisnis rintisan / startup hingga Corporate untuk melakukan Digitalisasi.  \nTim Kami terdiri dari para profesional muda yang kreatif, energic dan adaptif.EndFragment",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "27811738"
+  },
+  "item": [
+    {
+      "name": "User",
+      "item": [
+        {
+          "name": "Login",
+          "item": [
+            {
+              "name": "Login",
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      ""
+                    ],
+                    "type": "text/javascript",
+                    "packages": {}
+                  }
+                }
+              ],
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "key": "email",
+                      "value": "maxsamasta12345@gmail.com",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "12345",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "http://localhost:3000/login",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "login"
+                  ]
+                },
+                "description": "Gets information about the authenticated user."
+              },
+              "response": [
+                {
+                  "name": "Successful Login Employee",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/x-www-form-urlencoded",
+                        "type": "text"
+                      }
+                    ],
+                    "body": {
+                      "mode": "urlencoded",
+                      "urlencoded": [
+                        {
+                          "key": "email",
+                          "value": "adminmaxsamasta@gmail.com",
+                          "type": "text"
+                        },
+                        {
+                          "key": "password",
+                          "value": "san123",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    "url": {
+                      "raw": "http://localhost:3000/login",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "login"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json",
+                      "description": {
+                        "content": "",
+                        "type": "text/plain"
+                      }
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n    \"msg\": \"Login success\"\n}"
+                },
+                {
+                  "name": "Successful Login Admin",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/x-www-form-urlencoded",
+                        "type": "text"
+                      }
+                    ],
+                    "body": {
+                      "mode": "urlencoded",
+                      "urlencoded": [
+                        {
+                          "key": "email",
+                          "value": "adminmaxsamasta32@gmail.com",
+                          "type": "text"
+                        },
+                        {
+                          "key": "password",
+                          "value": "12345",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    "url": {
+                      "raw": "http://localhost:3000/login",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "login"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json",
+                      "description": {
+                        "content": "",
+                        "type": "text/plain"
+                      }
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n    \"msg\": \"Login success\"\n}"
+                },
+                {
+                  "name": "User Not Found",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/x-www-form-urlencoded",
+                        "type": "text"
+                      }
+                    ],
+                    "body": {
+                      "mode": "urlencoded",
+                      "urlencoded": [
+                        {
+                          "key": "email",
+                          "value": "maxsamasta123455@gmail.com",
+                          "type": "text"
+                        },
+                        {
+                          "key": "password",
+                          "value": "12345",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    "url": {
+                      "raw": "http://localhost:3000/login",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "login"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json",
+                      "description": {
+                        "content": "",
+                        "type": "text/plain"
+                      }
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n    \"status_code\": 404,\n    \"msg\": \"User not found\"\n}"
+                },
+                {
+                  "name": "Wrong Password",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/x-www-form-urlencoded",
+                        "type": "text"
+                      }
+                    ],
+                    "body": {
+                      "mode": "urlencoded",
+                      "urlencoded": [
+                        {
+                          "key": "email",
+                          "value": "maxsamasta12345@gmail.com",
+                          "type": "text"
+                        },
+                        {
+                          "key": "password",
+                          "value": "123455",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    "url": {
+                      "raw": "http://localhost:3000/login",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "login"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json",
+                      "description": {
+                        "content": "",
+                        "type": "text/plain"
+                      }
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n    \"status_code\": 400,\n    \"msg\": \"Wrong password\"\n}"
+                }
+              ]
+            },
+            {
+              "name": "Me",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:3000/me",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "me"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "Success",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:3000/me",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "me"
+                      ]
+                    }
+                  },
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json",
+                      "description": "",
+                      "type": "text"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\r\n    \"user\": {\r\n        \"uuid\": \"30e1ed19-f01d-4ba7-a8b8-432019b767c4\",\r\n        \"name\": \"maxsamastamagang\",\r\n        \"username\": \"maxsamastamagang\",\r\n        \"email\": \"maxsamasta12345@gmail.com\",\r\n        \"division\": \"UIUX\",\r\n        \"position\": \"Leader\",\r\n        \"role\": \"employee\"\r\n    }\r\n}"
+                },
+                {
+                  "name": "Failed",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:3000/me",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "me"
+                      ]
+                    }
+                  },
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json",
+                      "description": "",
+                      "type": "text"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n    \"msg\": \"Session expired. Please log in again.\"\n}"
+                }
+              ]
+            },
+            {
+              "name": "Logout",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:3000/logout",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "logout"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "Success",
+                  "originalRequest": {
+                    "method": "DELETE",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:3000/logout",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "logout"
+                      ]
+                    }
+                  },
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json",
+                      "description": "",
+                      "type": "text"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\r\n    \"msg\": \"Logout success\"\r\n}"
+                },
+                {
+                  "name": "Failed",
+                  "originalRequest": {
+                    "method": "DELETE",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:3000/logout",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "logout"
+                      ]
+                    }
+                  },
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json",
+                      "description": "",
+                      "type": "text"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\r\n    \"msg\": \"User not logged in\"\r\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "User CRUD",
+          "item": [
+            {
+              "name": "Create",
+              "item": [
+                {
+                  "name": "Create User",
+                  "request": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "formdata",
+                      "formdata": [
+                        {
+                          "key": "name",
+                          "value": "maxsamasta123",
+                          "type": "text"
+                        },
+                        {
+                          "key": "email",
+                          "value": "maxsamasta707@gmail.com",
+                          "type": "text"
+                        },
+                        {
+                          "key": "password",
+                          "value": "san123",
+                          "type": "text"
+                        },
+                        {
+                          "key": "confPassword",
+                          "value": "san123",
+                          "type": "text"
+                        },
+                        {
+                          "key": "username",
+                          "value": "maxsamasta12332111111",
+                          "type": "text"
+                        },
+                        {
+                          "key": "gender",
+                          "value": "female",
+                          "type": "text"
+                        },
+                        {
+                          "key": "division",
+                          "value": "UI/UX",
+                          "type": "text"
+                        },
+                        {
+                          "key": "position",
+                          "value": "staff",
+                          "type": "text"
+                        },
+                        {
+                          "key": "role",
+                          "value": "admin",
+                          "type": "text"
+                        },
+                        {
+                          "key": "photo",
+                          "type": "file",
+                          "src": "postman-cloud:///1ef46782-d705-40d0-8f28-1d24efb02061"
+                        }
+                      ]
+                    },
+                    "url": {
+                      "raw": "http://localhost:3000/createusersv2",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "createusersv2"
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "Employee 1",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "formdata",
+                          "formdata": [
+                            {
+                              "key": "name",
+                              "value": "maxsamasta",
+                              "type": "text"
+                            },
+                            {
+                              "key": "email",
+                              "value": "adminmaxsamasta@gmail.com",
+                              "type": "text"
+                            },
+                            {
+                              "key": "password",
+                              "value": "san123",
+                              "type": "text"
+                            },
+                            {
+                              "key": "confPassword",
+                              "value": "san123",
+                              "type": "text"
+                            },
+                            {
+                              "key": "username",
+                              "value": "maxsamasta123",
+                              "type": "text"
+                            },
+                            {
+                              "key": "gender",
+                              "value": "male",
+                              "type": "text"
+                            },
+                            {
+                              "key": "division",
+                              "value": "UI/UX",
+                              "type": "text"
+                            },
+                            {
+                              "key": "position",
+                              "value": "staff",
+                              "type": "text"
+                            },
+                            {
+                              "key": "role",
+                              "value": "employee",
+                              "type": "text"
+                            },
+                            {
+                              "key": "photo",
+                              "type": "file",
+                              "src": "postman-cloud:///1ef46782-d705-40d0-8f28-1d24efb02061"
+                            }
+                          ],
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:3000/createusersv2",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "3000",
+                          "path": [
+                            "createusersv2"
+                          ]
+                        }
+                      },
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json",
+                          "description": "",
+                          "type": "text"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"msg\": \"Registration successful\"\n}"
+                    },
+                    {
+                      "name": "Admin",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "formdata",
+                          "formdata": [
+                            {
+                              "key": "name",
+                              "value": "Admin707",
+                              "type": "text"
+                            },
+                            {
+                              "key": "email",
+                              "value": "admin123@gmail.com",
+                              "type": "text"
+                            },
+                            {
+                              "key": "password",
+                              "value": "san123",
+                              "type": "text"
+                            },
+                            {
+                              "key": "confPassword",
+                              "value": "san123",
+                              "type": "text"
+                            },
+                            {
+                              "key": "username",
+                              "value": "Admin707",
+                              "type": "text"
+                            },
+                            {
+                              "key": "gender",
+                              "value": "male",
+                              "type": "text"
+                            },
+                            {
+                              "key": "division",
+                              "value": "UI/UX",
+                              "type": "text"
+                            },
+                            {
+                              "key": "position",
+                              "value": "staff",
+                              "type": "text"
+                            },
+                            {
+                              "key": "role",
+                              "value": "admin",
+                              "type": "text"
+                            },
+                            {
+                              "key": "photo",
+                              "type": "file",
+                              "src": "postman-cloud:///1ef46782-d705-40d0-8f28-1d24efb02061"
+                            }
+                          ],
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:3000/createusersv2",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "3000",
+                          "path": [
+                            "createusersv2"
+                          ]
+                        }
+                      },
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json",
+                          "description": "",
+                          "type": "text"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"msg\": \"Registration successful\"\n}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Read",
+              "item": [
+                {
+                  "name": "GetAllUser",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:3000/users",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "users"
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "Success",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": []
+                      },
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json",
+                          "description": "",
+                          "type": "text"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "[\n    {\n        \"uuid\": \"4cb7654f-0ef1-4a2a-a8a3-7925f0bcd6c3\",\n        \"name\": \"Admin\",\n        \"email\": \"maxsamasta123456789@gmail.com\",\n        \"username\": \"Admin123\",\n        \"gender\": \"male\",\n        \"division\": \"UI/UX\",\n        \"position\": \"Staff\",\n        \"role\": \"admin\"\n    },\n    {\n        \"uuid\": \"787036bc-aa32-4d7f-bf26-647f7490724e\",\n        \"name\": \"maxsamastaabd\",\n        \"email\": \"maxsamasta123@gmail.com\",\n        \"username\": \"maxsamastaab12345\",\n        \"gender\": \"male\",\n        \"division\": \"UI/UX\",\n        \"position\": \"Staff\",\n        \"role\": \"employee\"\n    },\n    {\n        \"uuid\": \"94d5e2de-35ab-4d9b-8741-3e07fc95f230\",\n        \"name\": \"maxsamastaabd\",\n        \"email\": \"maxsamasta123459@gmail.com\",\n        \"username\": \"maxsamastaab123\",\n        \"gender\": \"male\",\n        \"division\": \"UI/UX\",\n        \"position\": \"Staff\",\n        \"role\": \"employee\"\n    }\n]"
+                    }
+                  ]
+                },
+                {
+                  "name": "GetUser by Id",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:3000/users/1",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "users",
+                        "1"
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "Success",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:3000/users/1",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "3000",
+                          "path": [
+                            "users",
+                            "1"
+                          ]
+                        }
+                      },
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json",
+                          "description": "",
+                          "type": "text"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"id\": 1,\n    \"uuid\": \"4cb7654f-0ef1-4a2a-a8a3-7925f0bcd6c3\",\n    \"name\": \"Admin\",\n    \"email\": \"maxsamasta123456789@gmail.com\",\n    \"username\": \"Admin123\",\n    \"gender\": \"male\",\n    \"division\": \"UI/UX\",\n    \"position\": \"Staff\",\n    \"role\": \"admin\"\n}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Update",
+              "item": [
+                {
+                  "name": "UpdateUser",
+                  "request": {
+                    "method": "PATCH",
+                    "header": [],
+                    "body": {
+                      "mode": "formdata",
+                      "formdata": [
+                        {
+                          "key": "name",
+                          "value": "maxsamasta",
+                          "type": "text"
+                        },
+                        {
+                          "key": "email",
+                          "value": "maxsamasta@gmail.com",
+                          "type": "text"
+                        },
+                        {
+                          "key": "password",
+                          "value": "san123",
+                          "type": "text"
+                        },
+                        {
+                          "key": "confPassword",
+                          "value": "san123",
+                          "type": "text"
+                        },
+                        {
+                          "key": "username",
+                          "value": "maxsamasta123",
+                          "type": "text"
+                        },
+                        {
+                          "key": "gender",
+                          "value": "female",
+                          "type": "text"
+                        },
+                        {
+                          "key": "division",
+                          "value": "UI/UX",
+                          "type": "text"
+                        },
+                        {
+                          "key": "position",
+                          "value": "staff",
+                          "type": "text"
+                        },
+                        {
+                          "key": "role",
+                          "value": "admin",
+                          "type": "text"
+                        },
+                        {
+                          "key": "photo",
+                          "type": "file",
+                          "fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
+                          "filesNotInWorkingDirectory": [
+                            "/C:/Users/maxsamasta/Pictures/Saved Pictures/cropped-3840-2160-1314707.jpg"
+                          ],
+                          "src": "/C:/Users/maxsamasta/Pictures/Saved Pictures/cropped-3840-2160-1314707.jpg"
+                        }
+                      ]
+                    },
+                    "url": {
+                      "raw": "http://localhost:3000/users/2",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "users",
+                        "2"
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "Success",
+                      "originalRequest": {
+                        "method": "PATCH",
+                        "header": [],
+                        "body": {
+                          "mode": "formdata",
+                          "formdata": [
+                            {
+                              "key": "name",
+                              "value": "maxsamasta",
+                              "type": "text"
+                            },
+                            {
+                              "key": "email",
+                              "value": "maxsamasta@gmail.com",
+                              "type": "text"
+                            },
+                            {
+                              "key": "password",
+                              "value": "san123",
+                              "type": "text"
+                            },
+                            {
+                              "key": "confPassword",
+                              "value": "san123",
+                              "type": "text"
+                            },
+                            {
+                              "key": "username",
+                              "value": "maxsamasta123",
+                              "type": "text"
+                            },
+                            {
+                              "key": "gender",
+                              "value": "female",
+                              "type": "text"
+                            },
+                            {
+                              "key": "division",
+                              "value": "UI/UX",
+                              "type": "text"
+                            },
+                            {
+                              "key": "position",
+                              "value": "staff",
+                              "type": "text"
+                            },
+                            {
+                              "key": "role",
+                              "value": "admin",
+                              "type": "text"
+                            },
+                            {
+                              "key": "photo",
+                              "type": "file",
+                              "fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
+                              "filesNotInWorkingDirectory": [
+                                "/C:/Users/maxsamasta/Pictures/Saved Pictures/cropped-3840-2160-1314707.jpg"
+                              ],
+                              "src": "/C:/Users/maxsamasta/Pictures/Saved Pictures/cropped-3840-2160-1314707.jpg"
+                            }
+                          ]
+                        },
+                        "url": {
+                          "raw": "http://localhost:3000/users/2",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "3000",
+                          "path": [
+                            "users",
+                            "2"
+                          ]
+                        }
+                      },
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json",
+                          "description": "",
+                          "type": "text"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"msg\": \"User updated successfully\"\n}"
+                    }
+                  ]
+                },
+                {
+                  "name": "Update to Suspend",
+                  "request": {
+                    "method": "PATCH",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:3000/suspenduser/17",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "suspenduser",
+                        "17"
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "Update to Aktif",
+                  "request": {
+                    "method": "PATCH",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:3000/aktifuser/18",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "aktifuser",
+                        "18"
+                      ]
+                    }
+                  },
+                  "response": []
+                }
+              ]
+            },
+            {
+              "name": "Delete",
+              "item": [
+                {
+                  "name": "Delete User",
+                  "request": {
+                    "method": "DELETE",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n  \"name\": \"maxsamastaabd123\",\r\n  \"email\": \"maxsamasta1234055@gmail.com\",\r\n  \"password\": \"12345\",\r\n  \"confPassword\": \"12345\",\r\n  \"username\": \"maxsamasta123\",\r\n  \"gender\": \"male\",\r\n  \"division\": \"UI/UX\",\r\n  \"position\": \"Staff\",\r\n\t\"role\": \"admin\"\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "http://localhost:3000/users/2",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "users",
+                        "2"
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "Success",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:3000/users/2",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "3000",
+                          "path": [
+                            "users",
+                            "2"
+                          ]
+                        }
+                      },
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json",
+                          "description": "",
+                          "type": "text"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"msg\": \"User Updated\"\n}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Password",
+          "item": [
+            {
+              "name": "Forgot Password",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"email\": \"maxsamasta12345@gmail.com\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:3000/auth/forgot-password",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "auth",
+                    "forgot-password"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Reset Password",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"token\": \"8b770bacf29a717d7e2dc3d7b09526eac8d4e9bb\",\r\n    \"newPassword\": \"newPassword12345\",\r\n    \"confirmPassword\": \"newPassword12345\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:3000/auth/reset-password/",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "auth",
+                    "reset-password",
+                    ""
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Profile (Employee Only)",
+          "item": [
+            {
+              "name": "Upload Image Profile",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "photo",
+                      "type": "file",
+                      "src": "/C:/Users/maxsamasta/Pictures/Saved Pictures/cropped-3840-2160-1314707.jpg"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "http://localhost:3000/uploadProfileImage",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "uploadProfileImage"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "Upload Image Profile",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "formdata",
+                      "formdata": [
+                        {
+                          "key": "photo",
+                          "type": "file",
+                          "src": "/C:/Users/maxsamasta/Pictures/download_1.jpeg"
+                        }
+                      ]
+                    },
+                    "url": {
+                      "raw": "http://localhost:3000/uploadProfileImage",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "uploadProfileImage"
+                      ]
+                    }
+                  },
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json",
+                      "description": "",
+                      "type": "text"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n    \"msg\": \"Profile image uploaded successfully\",\n    \"url\": \"https://res.cloudinary.com/maxsamasta/image/upload/v1721658334/profile_photos/download_1.jpeg_2024-07-22_21-25-30.jpg\"\n}"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "description": "The `/me` endpoints let you manage information about the authenticated user."
+    },
+    {
+      "name": "Absen CRUD",
+      "item": [
+        {
+          "name": "Create Absen (Employee)",
+          "item": [
+            {
+              "name": "Tap In",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "photo",
+                      "type": "file",
+                      "fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
+                      "filesNotInWorkingDirectory": [
+                        "/C:/Users/maxsamasta/Pictures/1.png"
+                      ],
+                      "src": "/C:/Users/maxsamasta/Pictures/1.png"
+                    },
+                    {
+                      "key": "latitude",
+                      "value": "-6.576985275258469",
+                      "type": "text"
+                    },
+                    {
+                      "key": "longitude",
+                      "value": "106.81071779240371",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "http://localhost:3000/absen/in",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "absen",
+                    "in"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "Tap In Success",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "formdata",
+                      "formdata": [
+                        {
+                          "key": "photo",
+                          "type": "file",
+                          "src": "postman-cloud:///1ef46782-d705-40d0-8f28-1d24efb02061"
+                        },
+                        {
+                          "key": "latitude",
+                          "value": "-6.576985275258469",
+                          "type": "text"
+                        },
+                        {
+                          "key": "longitude",
+                          "value": "106.81071779240371",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    "url": {
+                      "raw": "http://localhost:3000/absen/in",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "absen",
+                        "in"
+                      ]
+                    }
+                  },
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json",
+                      "description": "",
+                      "type": "text"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\r\n    \"message\": \"Tap in successful\",\r\n    \"data\": {\r\n        \"id\": 1,\r\n        \"userId\": 2,\r\n        \"photo\": \"https://res.cloudinary.com/maxsamasta/image/upload/v1721658069/absen_photos/1.png_2024-07-22_21-21-02.png\",\r\n        \"tapin\": \"2024-07-22T21:21:09+07:00\",\r\n        \"tapout\": null,\r\n        \"createdAt\": \"2024-07-22T21:21:09+07:00\",\r\n        \"updatedAt\": \"2024-07-22T21:21:09+07:00\"\r\n    }\r\n}"
+                },
+                {
+                  "name": "Tap In Failed",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "formdata",
+                      "formdata": [
+                        {
+                          "key": "photo",
+                          "type": "file",
+                          "src": "postman-cloud:///1ef46782-d705-40d0-8f28-1d24efb02061"
+                        },
+                        {
+                          "key": "latitude",
+                          "value": "-6.576990604372337",
+                          "type": "text"
+                        },
+                        {
+                          "key": "longitude",
+                          "value": "106.81086330223883",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    "url": {
+                      "raw": "http://localhost:3000/absen/in",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "absen",
+                        "in"
+                      ]
+                    }
+                  },
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json",
+                      "description": "",
+                      "type": "text"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\r\n    \"message\": \"Tap in successful\",\r\n    \"data\": {\r\n        \"id\": 1,\r\n        \"userId\": 2,\r\n        \"photo\": \"https://res.cloudinary.com/maxsamasta/image/upload/v1721658069/absen_photos/1.png_2024-07-22_21-21-02.png\",\r\n        \"tapin\": \"2024-07-22T21:21:09+07:00\",\r\n        \"tapout\": null,\r\n        \"createdAt\": \"2024-07-22T21:21:09+07:00\",\r\n        \"updatedAt\": \"2024-07-22T21:21:09+07:00\"\r\n    }\r\n}"
+                }
+              ]
+            },
+            {
+              "name": "Tap out",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "latitude",
+                      "value": "-6.576959961966762",
+                      "type": "text"
+                    },
+                    {
+                      "key": "longitude",
+                      "value": "106.81068426479193",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "http://localhost:3000/absen/out",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "absen",
+                    "out"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Read Absen (Admin Only)",
+          "item": [
+            {
+              "name": "Get All Absen",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "fullname",
+                      "value": "maxsamasta",
+                      "type": "text"
+                    },
+                    {
+                      "key": "id",
+                      "value": "11",
+                      "type": "text"
+                    },
+                    {
+                      "key": "from",
+                      "value": "2024-05-01",
+                      "type": "text"
+                    },
+                    {
+                      "key": "to",
+                      "value": "2024-12-01",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "http://localhost:3000/absens",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "absens"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "Get All Absen",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "body": {
+                      "mode": "formdata",
+                      "formdata": []
+                    },
+                    "url": {
+                      "raw": "http://localhost:3000/absens",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "absens"
+                      ],
+                      "query": [
+                        {
+                          "key": "fullname",
+                          "value": "maxsamasta",
+                          "disabled": true
+                        },
+                        {
+                          "key": "id",
+                          "value": "11",
+                          "disabled": true
+                        },
+                        {
+                          "key": "from",
+                          "value": "2024-05-01",
+                          "disabled": true
+                        },
+                        {
+                          "key": "to",
+                          "value": "2024-12-01",
+                          "disabled": true
+                        }
+                      ]
+                    }
+                  },
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json",
+                      "description": "",
+                      "type": "text"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "[\n    {\n        \"id\": 1,\n        \"uuid\": \"74eb8e67-f268-4039-af15-582a83b4838b\",\n        \"tapin\": \"2024-07-26T14:33:03.000Z\",\n        \"tapout\": null,\n        \"photo\": \"https://res.cloudinary.com/maxsamasta/image/upload/v1722004383/absen_photos/11_bf7951b2-9286-4429-8c98-cf64f8f1491a_2024-07-26_21-32-59.png\",\n        \"userId\": 11,\n        \"createdAt\": \"2024-07-26T14:33:03.419Z\",\n        \"updatedAt\": \"2024-07-26T14:33:03.419Z\",\n        \"user\": {\n            \"id\": 11,\n            \"uuid\": \"ed14dede-2d61-4560-8a30-9c96313afde5\",\n            \"name\": \"maxsamasta\",\n            \"email\": \"adminmaxsamasta@gmail.com\",\n            \"username\": \"maxsamasta123\",\n            \"gender\": \"male\",\n            \"division\": \"UI/UX\",\n            \"position\": \"staff\",\n            \"role\": \"employee\",\n            \"urlprofile\": \"https://res.cloudinary.com/maxsamasta/image/upload/v1722004090/profile_photos/8fc8b3fe-569a-4c87-90f0-742dfea2c5a9_2024-07-26_21-28-06.png\",\n            \"resetPasswordToken\": null,\n            \"resetPasswordExpires\": null,\n            \"createdAt\": \"2024-07-26T14:28:10.440Z\",\n            \"updatedAt\": \"2024-07-26T14:28:10.440Z\"\n        }\n    },\n    {\n        \"id\": 2,\n        \"uuid\": \"b408dc4b-2ef0-4880-ae03-5e7745df01f8\",\n        \"tapin\": \"2024-07-26T14:42:17.000Z\",\n        \"tapout\": null,\n        \"photo\": \"https://res.cloudinary.com/maxsamasta/image/upload/v1722004937/absen_photos/11_aac3fc16-af66-4a1a-9767-9a3e7058b313_2024-07-26_21-42-14.png\",\n        \"userId\": 11,\n        \"createdAt\": \"2024-07-26T14:42:17.969Z\",\n        \"updatedAt\": \"2024-07-26T14:42:17.969Z\",\n        \"user\": {\n            \"id\": 11,\n            \"uuid\": \"ed14dede-2d61-4560-8a30-9c96313afde5\",\n            \"name\": \"maxsamasta\",\n            \"email\": \"adminmaxsamasta@gmail.com\",\n            \"username\": \"maxsamasta123\",\n            \"gender\": \"male\",\n            \"division\": \"UI/UX\",\n            \"position\": \"staff\",\n            \"role\": \"employee\",\n            \"urlprofile\": \"https://res.cloudinary.com/maxsamasta/image/upload/v1722004090/profile_photos/8fc8b3fe-569a-4c87-90f0-742dfea2c5a9_2024-07-26_21-28-06.png\",\n            \"resetPasswordToken\": null,\n            \"resetPasswordExpires\": null,\n            \"createdAt\": \"2024-07-26T14:28:10.440Z\",\n            \"updatedAt\": \"2024-07-26T14:28:10.440Z\"\n        }\n    }\n]"
+                }
+              ]
+            },
+            {
+              "name": "Get Absen by Fullname And Id",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "fullname",
+                      "value": "maxsamasta",
+                      "type": "text"
+                    },
+                    {
+                      "key": "id",
+                      "value": "11",
+                      "type": "text"
+                    },
+                    {
+                      "key": "from",
+                      "value": "2024-05-01",
+                      "type": "text",
+                      "disabled": true
+                    },
+                    {
+                      "key": "to",
+                      "value": "2024-12-01",
+                      "type": "text",
+                      "disabled": true
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "http://localhost:3000/absens",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "absens"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "Get Absen by Fullname And Id",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "body": {
+                      "mode": "formdata",
+                      "formdata": []
+                    },
+                    "url": {
+                      "raw": "http://localhost:3000/absens?fullname=maxsamasta&id=11",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "absens"
+                      ],
+                      "query": [
+                        {
+                          "key": "fullname",
+                          "value": "maxsamasta"
+                        },
+                        {
+                          "key": "id",
+                          "value": "11"
+                        },
+                        {
+                          "key": "from",
+                          "value": "2024-05-01",
+                          "disabled": true
+                        },
+                        {
+                          "key": "to",
+                          "value": "2024-12-01",
+                          "disabled": true
+                        }
+                      ]
+                    }
+                  },
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json",
+                      "description": "",
+                      "type": "text"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "[\n    {\n        \"id\": 1,\n        \"uuid\": \"74eb8e67-f268-4039-af15-582a83b4838b\",\n        \"tapin\": \"2024-07-26T14:33:03.000Z\",\n        \"tapout\": null,\n        \"photo\": \"https://res.cloudinary.com/maxsamasta/image/upload/v1722004383/absen_photos/11_bf7951b2-9286-4429-8c98-cf64f8f1491a_2024-07-26_21-32-59.png\",\n        \"userId\": 11,\n        \"createdAt\": \"2024-07-26T14:33:03.419Z\",\n        \"updatedAt\": \"2024-07-26T14:33:03.419Z\",\n        \"user\": {\n            \"id\": 11,\n            \"uuid\": \"ed14dede-2d61-4560-8a30-9c96313afde5\",\n            \"name\": \"maxsamasta\",\n            \"email\": \"adminmaxsamasta@gmail.com\",\n            \"username\": \"maxsamasta123\",\n            \"gender\": \"male\",\n            \"division\": \"UI/UX\",\n            \"position\": \"staff\",\n            \"role\": \"employee\",\n            \"urlprofile\": \"https://res.cloudinary.com/maxsamasta/image/upload/v1722004090/profile_photos/8fc8b3fe-569a-4c87-90f0-742dfea2c5a9_2024-07-26_21-28-06.png\",\n            \"resetPasswordToken\": null,\n            \"resetPasswordExpires\": null,\n            \"createdAt\": \"2024-07-26T14:28:10.440Z\",\n            \"updatedAt\": \"2024-07-26T14:28:10.440Z\"\n        }\n    },\n    {\n        \"id\": 2,\n        \"uuid\": \"b408dc4b-2ef0-4880-ae03-5e7745df01f8\",\n        \"tapin\": \"2024-07-26T14:42:17.000Z\",\n        \"tapout\": null,\n        \"photo\": \"https://res.cloudinary.com/maxsamasta/image/upload/v1722004937/absen_photos/11_aac3fc16-af66-4a1a-9767-9a3e7058b313_2024-07-26_21-42-14.png\",\n        \"userId\": 11,\n        \"createdAt\": \"2024-07-26T14:42:17.969Z\",\n        \"updatedAt\": \"2024-07-26T14:42:17.969Z\",\n        \"user\": {\n            \"id\": 11,\n            \"uuid\": \"ed14dede-2d61-4560-8a30-9c96313afde5\",\n            \"name\": \"maxsamasta\",\n            \"email\": \"adminmaxsamasta@gmail.com\",\n            \"username\": \"maxsamasta123\",\n            \"gender\": \"male\",\n            \"division\": \"UI/UX\",\n            \"position\": \"staff\",\n            \"role\": \"employee\",\n            \"urlprofile\": \"https://res.cloudinary.com/maxsamasta/image/upload/v1722004090/profile_photos/8fc8b3fe-569a-4c87-90f0-742dfea2c5a9_2024-07-26_21-28-06.png\",\n            \"resetPasswordToken\": null,\n            \"resetPasswordExpires\": null,\n            \"createdAt\": \"2024-07-26T14:28:10.440Z\",\n            \"updatedAt\": \"2024-07-26T14:28:10.440Z\"\n        }\n    }\n]"
+                }
+              ]
+            },
+            {
+              "name": "Get Absen by Fullname,Id,From,To",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "fullname",
+                      "value": "maxsamasta",
+                      "type": "text"
+                    },
+                    {
+                      "key": "id",
+                      "value": "11",
+                      "type": "text"
+                    },
+                    {
+                      "key": "from",
+                      "value": "2024-05-01",
+                      "type": "text"
+                    },
+                    {
+                      "key": "to",
+                      "value": "2024-12-01",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "http://localhost:3000/absens",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "absens"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "Get Absen by Fullname,id,From,to",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "body": {
+                      "mode": "formdata",
+                      "formdata": []
+                    },
+                    "url": {
+                      "raw": "http://localhost:3000/absens?fullname=maxsamasta&id=11&from=2024-05-01&to=2024-12-01",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "absens"
+                      ],
+                      "query": [
+                        {
+                          "key": "fullname",
+                          "value": "maxsamasta"
+                        },
+                        {
+                          "key": "id",
+                          "value": "11"
+                        },
+                        {
+                          "key": "from",
+                          "value": "2024-05-01"
+                        },
+                        {
+                          "key": "to",
+                          "value": "2024-12-01"
+                        }
+                      ]
+                    }
+                  },
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json",
+                      "description": "",
+                      "type": "text"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "[\n    {\n        \"id\": 1,\n        \"uuid\": \"74eb8e67-f268-4039-af15-582a83b4838b\",\n        \"tapin\": \"2024-07-26T14:33:03.000Z\",\n        \"tapout\": null,\n        \"photo\": \"https://res.cloudinary.com/maxsamasta/image/upload/v1722004383/absen_photos/11_bf7951b2-9286-4429-8c98-cf64f8f1491a_2024-07-26_21-32-59.png\",\n        \"userId\": 11,\n        \"createdAt\": \"2024-07-26T14:33:03.419Z\",\n        \"updatedAt\": \"2024-07-26T14:33:03.419Z\",\n        \"user\": {\n            \"id\": 11,\n            \"uuid\": \"ed14dede-2d61-4560-8a30-9c96313afde5\",\n            \"name\": \"maxsamasta\",\n            \"email\": \"adminmaxsamasta@gmail.com\",\n            \"username\": \"maxsamasta123\",\n            \"gender\": \"male\",\n            \"division\": \"UI/UX\",\n            \"position\": \"staff\",\n            \"role\": \"employee\",\n            \"urlprofile\": \"https://res.cloudinary.com/maxsamasta/image/upload/v1722004090/profile_photos/8fc8b3fe-569a-4c87-90f0-742dfea2c5a9_2024-07-26_21-28-06.png\",\n            \"resetPasswordToken\": null,\n            \"resetPasswordExpires\": null,\n            \"createdAt\": \"2024-07-26T14:28:10.440Z\",\n            \"updatedAt\": \"2024-07-26T14:28:10.440Z\"\n        }\n    },\n    {\n        \"id\": 2,\n        \"uuid\": \"b408dc4b-2ef0-4880-ae03-5e7745df01f8\",\n        \"tapin\": \"2024-07-26T14:42:17.000Z\",\n        \"tapout\": null,\n        \"photo\": \"https://res.cloudinary.com/maxsamasta/image/upload/v1722004937/absen_photos/11_aac3fc16-af66-4a1a-9767-9a3e7058b313_2024-07-26_21-42-14.png\",\n        \"userId\": 11,\n        \"createdAt\": \"2024-07-26T14:42:17.969Z\",\n        \"updatedAt\": \"2024-07-26T14:42:17.969Z\",\n        \"user\": {\n            \"id\": 11,\n            \"uuid\": \"ed14dede-2d61-4560-8a30-9c96313afde5\",\n            \"name\": \"maxsamasta\",\n            \"email\": \"adminmaxsamasta@gmail.com\",\n            \"username\": \"maxsamasta123\",\n            \"gender\": \"male\",\n            \"division\": \"UI/UX\",\n            \"position\": \"staff\",\n            \"role\": \"employee\",\n            \"urlprofile\": \"https://res.cloudinary.com/maxsamasta/image/upload/v1722004090/profile_photos/8fc8b3fe-569a-4c87-90f0-742dfea2c5a9_2024-07-26_21-28-06.png\",\n            \"resetPasswordToken\": null,\n            \"resetPasswordExpires\": null,\n            \"createdAt\": \"2024-07-26T14:28:10.440Z\",\n            \"updatedAt\": \"2024-07-26T14:28:10.440Z\"\n        }\n    }\n]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Admin",
+      "item": [
+        {
+          "name": "Create HKA",
+          "item": [
+            {
+              "name": "Add HKA",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "key": "Tahun",
+                      "value": "2024",
+                      "type": "text"
+                    },
+                    {
+                      "key": "Bulan",
+                      "value": "Oktober",
+                      "type": "text"
+                    },
+                    {
+                      "key": "HKA",
+                      "value": "22",
+                      "type": "text"
+                    },
+                    {
+                      "key": "Jumlah",
+                      "value": "null",
+                      "type": "text"
+                    },
+                    {
+                      "key": "TanggalHariLibur",
+                      "value": "3",
+                      "type": "text"
+                    },
+                    {
+                      "key": "TanggalHariLibur",
+                      "value": "4",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "http://localhost:3000/admin",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "admin"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Read HKA",
+          "item": [
+            {
+              "name": "Record",
+              "item": [
+                {
+                  "name": "Get All Record",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:3000/allrecord",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "allrecord"
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "Get All Record by Range",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "body": {
+                      "mode": "urlencoded",
+                      "urlencoded": [
+                        {
+                          "key": "from",
+                          "value": "2024-01",
+                          "type": "text"
+                        },
+                        {
+                          "key": "to",
+                          "value": "2024-12",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    "url": {
+                      "raw": "http://localhost:3000/allrecordbydate",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "allrecordbydate"
+                      ]
+                    }
+                  },
+                  "response": []
+                }
+              ]
+            },
+            {
+              "name": "Dashboard Search",
+              "item": [
+                {
+                  "name": "Get Statistik Dashboard",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:3000/statistics",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "statistics"
+                      ]
+                    }
+                  },
+                  "response": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-API-Key",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{token}}",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://farming-simulator.pstmn.io"
+    }
+  ]
+}

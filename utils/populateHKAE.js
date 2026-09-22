@@ -1,17 +1,27 @@
 import moment from 'moment';
+import { Op } from 'sequelize';
 import UserModel from '../models/UserModel.js';
 import HKAEModel from '../models/HKAEModel.js';
 import AdminModel from '../models/AdminModel.js';
+
+const INDONESIAN_MONTHS = [
+    'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni',
+    'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'
+];
+
 export const populateHKAE = async () => {
     const now = moment();
-    const currentYear = now.year().toString(); // Convert year to string
-    const currentMonth = now.format('MMMM');
+    const currentYear = now.year();
+    const currentMonthIndo = INDONESIAN_MONTHS[now.month()];
+    const currentMonthEng = now.format('MMMM');
 
     try {
         const adminRecord = await AdminModel.findOne({
             where: {
-                Tahun: currentYear, // Ensure Tahun is compared as a string
-                Bulan: currentMonth
+                Tahun: currentYear,
+                Bulan: {
+                    [Op.or]: [currentMonthIndo, currentMonthEng]
+                }
             }
         });
 
