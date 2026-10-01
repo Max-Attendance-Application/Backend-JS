@@ -61,7 +61,7 @@ graph TD
     Controllers -->|Sequelize ORM| PG
     Controllers -->|Reset Password| SMTP
     
-    CronJob -->|Accumulate Metrics (Midnight)| PG
+    CronJob -->|Accumulate Metrics at Midnight| PG
 ```
 
 ---
