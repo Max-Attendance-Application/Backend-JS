@@ -53,7 +53,7 @@ Session-based authentication, Cloudinary media storage, Haversine geofencing, an
 
 - **ES Modules only** — `"type": "module"` in `package.json`; every file uses `import`/`export`.
 - **MVC architecture** — Models define schema, Controllers hold business logic, Routes map HTTP endpoints.
-- **Stateful sessions** — Authentication uses `express-session` backed by PostgreSQL via `connect-session-sequelize`. JWT is listed as a dependency but is **not used** in the authentication flow.
+- **Stateful sessions** — Authentication uses `express-session` backed by PostgreSQL via `connect-session-sequelize`. JWT is intentionally not used, so sessions can be revoked server-side.
 - **Cloudinary-exclusive media** — All file uploads (attendance photos, profile images) go directly to Cloudinary through `multer-storage-cloudinary`. No local disk storage.
 - **Haversine geofencing** — Attendance tap-in/tap-out validates employee GPS coordinates against a fixed office location within a 9-meter radius.
 
@@ -279,7 +279,7 @@ POST /login                        GET /users
                                      │
                                      ├─ adminOnly middleware (if needed)
                                      │    ├─ Verify user.role === 'admin'
-                                     │    └─ next() or 401/403
+                                     │    └─ next() or 404/401
                                      │
                                      └─ Controller handler
 ```
@@ -596,5 +596,5 @@ export const functionName = async (req, res) => {
 
 | Variable | Description |
 |:---------|:------------|
-| `JWT_SECRET` | Listed in `.env` but not referenced by any active controller. JWT is not used for authentication. |
+| `JWT_SECRET` | Legacy — removed from `.env.example`; not referenced anywhere. Safe to delete from local `.env`. |
 | `NODE_ENV` | Referenced only in unused `models/index.js` (Sequelize CLI boilerplate). |

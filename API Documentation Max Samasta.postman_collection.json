@@ -3,8 +3,7 @@
     "_postman_id": "7288c4a7-ccf3-4276-a8d7-61878408551c",
     "name": "API Documentation Max Samasta",
     "description": "PT. Max Samasta Grup\n\nmerupakan sebuah perusahaan yang bergerak di bidang pengembangan Teknologi dan Bisnis Digital yang dapat membantu berbagai macam bisnis dari berbagai ukuran mulai dari bisnis rumahan, UMKM, bisnis rintisan / startup hingga Corporate untuk melakukan Digitalisasi.  \nTim Kami terdiri dari para profesional muda yang kreatif, energic dan adaptif.EndFragment",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "_exporter_id": "27811738"
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "item": [
     {
@@ -35,7 +34,7 @@
                   "urlencoded": [
                     {
                       "key": "email",
-                      "value": "maxsamasta12345@gmail.com",
+                      "value": "employee5@example.com",
                       "type": "text"
                     },
                     {
@@ -75,7 +74,7 @@
                       "urlencoded": [
                         {
                           "key": "email",
-                          "value": "adminmaxsamasta@gmail.com",
+                          "value": "admin2@example.com",
                           "type": "text"
                         },
                         {
@@ -129,7 +128,7 @@
                       "urlencoded": [
                         {
                           "key": "email",
-                          "value": "adminmaxsamasta32@gmail.com",
+                          "value": "admin1@example.com",
                           "type": "text"
                         },
                         {
@@ -183,7 +182,7 @@
                       "urlencoded": [
                         {
                           "key": "email",
-                          "value": "maxsamasta123455@gmail.com",
+                          "value": "employee2@example.com",
                           "type": "text"
                         },
                         {
@@ -237,7 +236,7 @@
                       "urlencoded": [
                         {
                           "key": "email",
-                          "value": "maxsamasta12345@gmail.com",
+                          "value": "employee5@example.com",
                           "type": "text"
                         },
                         {
@@ -322,7 +321,7 @@
                     }
                   ],
                   "cookie": [],
-                  "body": "{\r\n    \"user\": {\r\n        \"uuid\": \"30e1ed19-f01d-4ba7-a8b8-432019b767c4\",\r\n        \"name\": \"maxsamastamagang\",\r\n        \"username\": \"maxsamastamagang\",\r\n        \"email\": \"maxsamasta12345@gmail.com\",\r\n        \"division\": \"UIUX\",\r\n        \"position\": \"Leader\",\r\n        \"role\": \"employee\"\r\n    }\r\n}"
+                  "body": "{\r\n    \"user\": {\r\n        \"uuid\": \"30e1ed19-f01d-4ba7-a8b8-432019b767c4\",\r\n        \"name\": \"maxsamastamagang\",\r\n        \"username\": \"maxsamastamagang\",\r\n        \"email\": \"employee5@example.com\",\r\n        \"division\": \"UIUX\",\r\n        \"position\": \"Leader\",\r\n        \"role\": \"employee\"\r\n    }\r\n}"
                 },
                 {
                   "name": "Failed",
@@ -456,7 +455,7 @@
                         },
                         {
                           "key": "email",
-                          "value": "maxsamasta707@gmail.com",
+                          "value": "employee7@example.com",
                           "type": "text"
                         },
                         {
@@ -497,7 +496,7 @@
                         {
                           "key": "photo",
                           "type": "file",
-                          "src": "postman-cloud:///1ef46782-d705-40d0-8f28-1d24efb02061"
+                          "src": "/path/to/photo.jpg"
                         }
                       ]
                     },
@@ -529,7 +528,7 @@
                             },
                             {
                               "key": "email",
-                              "value": "adminmaxsamasta@gmail.com",
+                              "value": "admin2@example.com",
                               "type": "text"
                             },
                             {
@@ -570,7 +569,7 @@
                             {
                               "key": "photo",
                               "type": "file",
-                              "src": "postman-cloud:///1ef46782-d705-40d0-8f28-1d24efb02061"
+                              "src": "/path/to/photo.jpg"
                             }
                           ],
                           "options": {
@@ -618,7 +617,7 @@
                             },
                             {
                               "key": "email",
-                              "value": "admin123@gmail.com",
+                              "value": "admin@example.com",
                               "type": "text"
                             },
                             {
@@ -659,7 +658,7 @@
                             {
                               "key": "photo",
                               "type": "file",
-                              "src": "postman-cloud:///1ef46782-d705-40d0-8f28-1d24efb02061"
+                              "src": "/path/to/photo.jpg"
                             }
                           ],
                           "options": {
@@ -733,7 +732,7 @@
                         }
                       ],
                       "cookie": [],
-                      "body": "[\n    {\n        \"uuid\": \"4cb7654f-0ef1-4a2a-a8a3-7925f0bcd6c3\",\n        \"name\": \"Admin\",\n        \"email\": \"maxsamasta123456789@gmail.com\",\n        \"username\": \"Admin123\",\n        \"gender\": \"male\",\n        \"division\": \"UI/UX\",\n        \"position\": \"Staff\",\n        \"role\": \"admin\"\n    },\n    {\n        \"uuid\": \"787036bc-aa32-4d7f-bf26-647f7490724e\",\n        \"name\": \"maxsamastaabd\",\n        \"email\": \"maxsamasta123@gmail.com\",\n        \"username\": \"maxsamastaab12345\",\n        \"gender\": \"male\",\n        \"division\": \"UI/UX\",\n        \"position\": \"Staff\",\n        \"role\": \"employee\"\n    },\n    {\n        \"uuid\": \"94d5e2de-35ab-4d9b-8741-3e07fc95f230\",\n        \"name\": \"maxsamastaabd\",\n        \"email\": \"maxsamasta123459@gmail.com\",\n        \"username\": \"maxsamastaab123\",\n        \"gender\": \"male\",\n        \"division\": \"UI/UX\",\n        \"position\": \"Staff\",\n        \"role\": \"employee\"\n    }\n]"
+                      "body": "[\n    {\n        \"uuid\": \"4cb7654f-0ef1-4a2a-a8a3-7925f0bcd6c3\",\n        \"name\": \"Admin\",\n        \"email\": \"employee3@example.com\",\n        \"username\": \"Admin123\",\n        \"gender\": \"male\",\n        \"division\": \"UI/UX\",\n        \"position\": \"Staff\",\n        \"role\": \"admin\"\n    },\n    {\n        \"uuid\": \"787036bc-aa32-4d7f-bf26-647f7490724e\",\n        \"name\": \"maxsamastaabd\",\n        \"email\": \"employee6@example.com\",\n        \"username\": \"maxsamastaab12345\",\n        \"gender\": \"male\",\n        \"division\": \"UI/UX\",\n        \"position\": \"Staff\",\n        \"role\": \"employee\"\n    },\n    {\n        \"uuid\": \"94d5e2de-35ab-4d9b-8741-3e07fc95f230\",\n        \"name\": \"maxsamastaabd\",\n        \"email\": \"employee4@example.com\",\n        \"username\": \"maxsamastaab123\",\n        \"gender\": \"male\",\n        \"division\": \"UI/UX\",\n        \"position\": \"Staff\",\n        \"role\": \"employee\"\n    }\n]"
                     }
                   ]
                 },
@@ -784,7 +783,7 @@
                         }
                       ],
                       "cookie": [],
-                      "body": "{\n    \"id\": 1,\n    \"uuid\": \"4cb7654f-0ef1-4a2a-a8a3-7925f0bcd6c3\",\n    \"name\": \"Admin\",\n    \"email\": \"maxsamasta123456789@gmail.com\",\n    \"username\": \"Admin123\",\n    \"gender\": \"male\",\n    \"division\": \"UI/UX\",\n    \"position\": \"Staff\",\n    \"role\": \"admin\"\n}"
+                      "body": "{\n    \"id\": 1,\n    \"uuid\": \"4cb7654f-0ef1-4a2a-a8a3-7925f0bcd6c3\",\n    \"name\": \"Admin\",\n    \"email\": \"employee3@example.com\",\n    \"username\": \"Admin123\",\n    \"gender\": \"male\",\n    \"division\": \"UI/UX\",\n    \"position\": \"Staff\",\n    \"role\": \"admin\"\n}"
                     }
                   ]
                 }
@@ -808,7 +807,7 @@
                         },
                         {
                           "key": "email",
-                          "value": "maxsamasta@gmail.com",
+                          "value": "employee8@example.com",
                           "type": "text"
                         },
                         {
@@ -851,9 +850,9 @@
                           "type": "file",
                           "fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
                           "filesNotInWorkingDirectory": [
-                            "/C:/Users/maxsamasta/Pictures/Saved Pictures/cropped-3840-2160-1314707.jpg"
+                            "/path/to/photo.jpg"
                           ],
-                          "src": "/C:/Users/maxsamasta/Pictures/Saved Pictures/cropped-3840-2160-1314707.jpg"
+                          "src": "/path/to/photo.jpg"
                         }
                       ]
                     },
@@ -886,7 +885,7 @@
                             },
                             {
                               "key": "email",
-                              "value": "maxsamasta@gmail.com",
+                              "value": "employee8@example.com",
                               "type": "text"
                             },
                             {
@@ -929,9 +928,9 @@
                               "type": "file",
                               "fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
                               "filesNotInWorkingDirectory": [
-                                "/C:/Users/maxsamasta/Pictures/Saved Pictures/cropped-3840-2160-1314707.jpg"
+                                "/path/to/photo.jpg"
                               ],
-                              "src": "/C:/Users/maxsamasta/Pictures/Saved Pictures/cropped-3840-2160-1314707.jpg"
+                              "src": "/path/to/photo.jpg"
                             }
                           ]
                         },
@@ -1014,7 +1013,7 @@
                     "header": [],
                     "body": {
                       "mode": "raw",
-                      "raw": "{\r\n  \"name\": \"maxsamastaabd123\",\r\n  \"email\": \"maxsamasta1234055@gmail.com\",\r\n  \"password\": \"12345\",\r\n  \"confPassword\": \"12345\",\r\n  \"username\": \"maxsamasta123\",\r\n  \"gender\": \"male\",\r\n  \"division\": \"UI/UX\",\r\n  \"position\": \"Staff\",\r\n\t\"role\": \"admin\"\r\n}",
+                      "raw": "{\r\n  \"name\": \"maxsamastaabd123\",\r\n  \"email\": \"employee1@example.com\",\r\n  \"password\": \"12345\",\r\n  \"confPassword\": \"12345\",\r\n  \"username\": \"maxsamasta123\",\r\n  \"gender\": \"male\",\r\n  \"division\": \"UI/UX\",\r\n  \"position\": \"Staff\",\r\n\t\"role\": \"admin\"\r\n}",
                       "options": {
                         "raw": {
                           "language": "json"
@@ -1081,7 +1080,7 @@
                 "header": [],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n    \"email\": \"maxsamasta12345@gmail.com\"\r\n}",
+                  "raw": "{\r\n    \"email\": \"employee5@example.com\"\r\n}",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -1149,7 +1148,7 @@
                     {
                       "key": "photo",
                       "type": "file",
-                      "src": "/C:/Users/maxsamasta/Pictures/Saved Pictures/cropped-3840-2160-1314707.jpg"
+                      "src": "/path/to/photo.jpg"
                     }
                   ]
                 },
@@ -1177,7 +1176,7 @@
                         {
                           "key": "photo",
                           "type": "file",
-                          "src": "/C:/Users/maxsamasta/Pictures/download_1.jpeg"
+                          "src": "/path/to/photo.jpg"
                         }
                       ]
                     },
@@ -1203,7 +1202,7 @@
                     }
                   ],
                   "cookie": [],
-                  "body": "{\n    \"msg\": \"Profile image uploaded successfully\",\n    \"url\": \"https://res.cloudinary.com/maxsamasta/image/upload/v1721658334/profile_photos/download_1.jpeg_2024-07-22_21-25-30.jpg\"\n}"
+                  "body": "{\n    \"msg\": \"Profile image uploaded successfully\",\n    \"url\": \"https://res.cloudinary.com/demo/image/upload/v1721658334/profile_photos/download_1.jpeg_2024-07-22_21-25-30.jpg\"\n}"
                 }
               ]
             }
@@ -1231,9 +1230,9 @@
                       "type": "file",
                       "fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
                       "filesNotInWorkingDirectory": [
-                        "/C:/Users/maxsamasta/Pictures/1.png"
+                        "/path/to/photo.jpg"
                       ],
-                      "src": "/C:/Users/maxsamasta/Pictures/1.png"
+                      "src": "/path/to/photo.jpg"
                     },
                     {
                       "key": "latitude",
@@ -1272,7 +1271,7 @@
                         {
                           "key": "photo",
                           "type": "file",
-                          "src": "postman-cloud:///1ef46782-d705-40d0-8f28-1d24efb02061"
+                          "src": "/path/to/photo.jpg"
                         },
                         {
                           "key": "latitude",
@@ -1309,7 +1308,7 @@
                     }
                   ],
                   "cookie": [],
-                  "body": "{\r\n    \"message\": \"Tap in successful\",\r\n    \"data\": {\r\n        \"id\": 1,\r\n        \"userId\": 2,\r\n        \"photo\": \"https://res.cloudinary.com/maxsamasta/image/upload/v1721658069/absen_photos/1.png_2024-07-22_21-21-02.png\",\r\n        \"tapin\": \"2024-07-22T21:21:09+07:00\",\r\n        \"tapout\": null,\r\n        \"createdAt\": \"2024-07-22T21:21:09+07:00\",\r\n        \"updatedAt\": \"2024-07-22T21:21:09+07:00\"\r\n    }\r\n}"
+                  "body": "{\r\n    \"message\": \"Tap in successful\",\r\n    \"data\": {\r\n        \"id\": 1,\r\n        \"userId\": 2,\r\n        \"photo\": \"https://res.cloudinary.com/demo/image/upload/v1721658069/absen_photos/1.png_2024-07-22_21-21-02.png\",\r\n        \"tapin\": \"2024-07-22T21:21:09+07:00\",\r\n        \"tapout\": null,\r\n        \"createdAt\": \"2024-07-22T21:21:09+07:00\",\r\n        \"updatedAt\": \"2024-07-22T21:21:09+07:00\"\r\n    }\r\n}"
                 },
                 {
                   "name": "Tap In Failed",
@@ -1322,7 +1321,7 @@
                         {
                           "key": "photo",
                           "type": "file",
-                          "src": "postman-cloud:///1ef46782-d705-40d0-8f28-1d24efb02061"
+                          "src": "/path/to/photo.jpg"
                         },
                         {
                           "key": "latitude",
@@ -1359,7 +1358,7 @@
                     }
                   ],
                   "cookie": [],
-                  "body": "{\r\n    \"message\": \"Tap in successful\",\r\n    \"data\": {\r\n        \"id\": 1,\r\n        \"userId\": 2,\r\n        \"photo\": \"https://res.cloudinary.com/maxsamasta/image/upload/v1721658069/absen_photos/1.png_2024-07-22_21-21-02.png\",\r\n        \"tapin\": \"2024-07-22T21:21:09+07:00\",\r\n        \"tapout\": null,\r\n        \"createdAt\": \"2024-07-22T21:21:09+07:00\",\r\n        \"updatedAt\": \"2024-07-22T21:21:09+07:00\"\r\n    }\r\n}"
+                  "body": "{\r\n    \"message\": \"Tap in successful\",\r\n    \"data\": {\r\n        \"id\": 1,\r\n        \"userId\": 2,\r\n        \"photo\": \"https://res.cloudinary.com/demo/image/upload/v1721658069/absen_photos/1.png_2024-07-22_21-21-02.png\",\r\n        \"tapin\": \"2024-07-22T21:21:09+07:00\",\r\n        \"tapout\": null,\r\n        \"createdAt\": \"2024-07-22T21:21:09+07:00\",\r\n        \"updatedAt\": \"2024-07-22T21:21:09+07:00\"\r\n    }\r\n}"
                 }
               ]
             },
@@ -1502,7 +1501,7 @@
                     }
                   ],
                   "cookie": [],
-                  "body": "[\n    {\n        \"id\": 1,\n        \"uuid\": \"74eb8e67-f268-4039-af15-582a83b4838b\",\n        \"tapin\": \"2024-07-26T14:33:03.000Z\",\n        \"tapout\": null,\n        \"photo\": \"https://res.cloudinary.com/maxsamasta/image/upload/v1722004383/absen_photos/11_bf7951b2-9286-4429-8c98-cf64f8f1491a_2024-07-26_21-32-59.png\",\n        \"userId\": 11,\n        \"createdAt\": \"2024-07-26T14:33:03.419Z\",\n        \"updatedAt\": \"2024-07-26T14:33:03.419Z\",\n        \"user\": {\n            \"id\": 11,\n            \"uuid\": \"ed14dede-2d61-4560-8a30-9c96313afde5\",\n            \"name\": \"maxsamasta\",\n            \"email\": \"adminmaxsamasta@gmail.com\",\n            \"username\": \"maxsamasta123\",\n            \"gender\": \"male\",\n            \"division\": \"UI/UX\",\n            \"position\": \"staff\",\n            \"role\": \"employee\",\n            \"urlprofile\": \"https://res.cloudinary.com/maxsamasta/image/upload/v1722004090/profile_photos/8fc8b3fe-569a-4c87-90f0-742dfea2c5a9_2024-07-26_21-28-06.png\",\n            \"resetPasswordToken\": null,\n            \"resetPasswordExpires\": null,\n            \"createdAt\": \"2024-07-26T14:28:10.440Z\",\n            \"updatedAt\": \"2024-07-26T14:28:10.440Z\"\n        }\n    },\n    {\n        \"id\": 2,\n        \"uuid\": \"b408dc4b-2ef0-4880-ae03-5e7745df01f8\",\n        \"tapin\": \"2024-07-26T14:42:17.000Z\",\n        \"tapout\": null,\n        \"photo\": \"https://res.cloudinary.com/maxsamasta/image/upload/v1722004937/absen_photos/11_aac3fc16-af66-4a1a-9767-9a3e7058b313_2024-07-26_21-42-14.png\",\n        \"userId\": 11,\n        \"createdAt\": \"2024-07-26T14:42:17.969Z\",\n        \"updatedAt\": \"2024-07-26T14:42:17.969Z\",\n        \"user\": {\n            \"id\": 11,\n            \"uuid\": \"ed14dede-2d61-4560-8a30-9c96313afde5\",\n            \"name\": \"maxsamasta\",\n            \"email\": \"adminmaxsamasta@gmail.com\",\n            \"username\": \"maxsamasta123\",\n            \"gender\": \"male\",\n            \"division\": \"UI/UX\",\n            \"position\": \"staff\",\n            \"role\": \"employee\",\n            \"urlprofile\": \"https://res.cloudinary.com/maxsamasta/image/upload/v1722004090/profile_photos/8fc8b3fe-569a-4c87-90f0-742dfea2c5a9_2024-07-26_21-28-06.png\",\n            \"resetPasswordToken\": null,\n            \"resetPasswordExpires\": null,\n            \"createdAt\": \"2024-07-26T14:28:10.440Z\",\n            \"updatedAt\": \"2024-07-26T14:28:10.440Z\"\n        }\n    }\n]"
+                  "body": "[\n    {\n        \"id\": 1,\n        \"uuid\": \"74eb8e67-f268-4039-af15-582a83b4838b\",\n        \"tapin\": \"2024-07-26T14:33:03.000Z\",\n        \"tapout\": null,\n        \"photo\": \"https://res.cloudinary.com/demo/image/upload/v1722004383/absen_photos/11_bf7951b2-9286-4429-8c98-cf64f8f1491a_2024-07-26_21-32-59.png\",\n        \"userId\": 11,\n        \"createdAt\": \"2024-07-26T14:33:03.419Z\",\n        \"updatedAt\": \"2024-07-26T14:33:03.419Z\",\n        \"user\": {\n            \"id\": 11,\n            \"uuid\": \"ed14dede-2d61-4560-8a30-9c96313afde5\",\n            \"name\": \"maxsamasta\",\n            \"email\": \"admin2@example.com\",\n            \"username\": \"maxsamasta123\",\n            \"gender\": \"male\",\n            \"division\": \"UI/UX\",\n            \"position\": \"staff\",\n            \"role\": \"employee\",\n            \"urlprofile\": \"https://res.cloudinary.com/demo/image/upload/v1722004090/profile_photos/8fc8b3fe-569a-4c87-90f0-742dfea2c5a9_2024-07-26_21-28-06.png\",\n            \"resetPasswordToken\": null,\n            \"resetPasswordExpires\": null,\n            \"createdAt\": \"2024-07-26T14:28:10.440Z\",\n            \"updatedAt\": \"2024-07-26T14:28:10.440Z\"\n        }\n    },\n    {\n        \"id\": 2,\n        \"uuid\": \"b408dc4b-2ef0-4880-ae03-5e7745df01f8\",\n        \"tapin\": \"2024-07-26T14:42:17.000Z\",\n        \"tapout\": null,\n        \"photo\": \"https://res.cloudinary.com/demo/image/upload/v1722004937/absen_photos/11_aac3fc16-af66-4a1a-9767-9a3e7058b313_2024-07-26_21-42-14.png\",\n        \"userId\": 11,\n        \"createdAt\": \"2024-07-26T14:42:17.969Z\",\n        \"updatedAt\": \"2024-07-26T14:42:17.969Z\",\n        \"user\": {\n            \"id\": 11,\n            \"uuid\": \"ed14dede-2d61-4560-8a30-9c96313afde5\",\n            \"name\": \"maxsamasta\",\n            \"email\": \"admin2@example.com\",\n            \"username\": \"maxsamasta123\",\n            \"gender\": \"male\",\n            \"division\": \"UI/UX\",\n            \"position\": \"staff\",\n            \"role\": \"employee\",\n            \"urlprofile\": \"https://res.cloudinary.com/demo/image/upload/v1722004090/profile_photos/8fc8b3fe-569a-4c87-90f0-742dfea2c5a9_2024-07-26_21-28-06.png\",\n            \"resetPasswordToken\": null,\n            \"resetPasswordExpires\": null,\n            \"createdAt\": \"2024-07-26T14:28:10.440Z\",\n            \"updatedAt\": \"2024-07-26T14:28:10.440Z\"\n        }\n    }\n]"
                 }
               ]
             },
@@ -1605,7 +1604,7 @@
                     }
                   ],
                   "cookie": [],
-                  "body": "[\n    {\n        \"id\": 1,\n        \"uuid\": \"74eb8e67-f268-4039-af15-582a83b4838b\",\n        \"tapin\": \"2024-07-26T14:33:03.000Z\",\n        \"tapout\": null,\n        \"photo\": \"https://res.cloudinary.com/maxsamasta/image/upload/v1722004383/absen_photos/11_bf7951b2-9286-4429-8c98-cf64f8f1491a_2024-07-26_21-32-59.png\",\n        \"userId\": 11,\n        \"createdAt\": \"2024-07-26T14:33:03.419Z\",\n        \"updatedAt\": \"2024-07-26T14:33:03.419Z\",\n        \"user\": {\n            \"id\": 11,\n            \"uuid\": \"ed14dede-2d61-4560-8a30-9c96313afde5\",\n            \"name\": \"maxsamasta\",\n            \"email\": \"adminmaxsamasta@gmail.com\",\n            \"username\": \"maxsamasta123\",\n            \"gender\": \"male\",\n            \"division\": \"UI/UX\",\n            \"position\": \"staff\",\n            \"role\": \"employee\",\n            \"urlprofile\": \"https://res.cloudinary.com/maxsamasta/image/upload/v1722004090/profile_photos/8fc8b3fe-569a-4c87-90f0-742dfea2c5a9_2024-07-26_21-28-06.png\",\n            \"resetPasswordToken\": null,\n            \"resetPasswordExpires\": null,\n            \"createdAt\": \"2024-07-26T14:28:10.440Z\",\n            \"updatedAt\": \"2024-07-26T14:28:10.440Z\"\n        }\n    },\n    {\n        \"id\": 2,\n        \"uuid\": \"b408dc4b-2ef0-4880-ae03-5e7745df01f8\",\n        \"tapin\": \"2024-07-26T14:42:17.000Z\",\n        \"tapout\": null,\n        \"photo\": \"https://res.cloudinary.com/maxsamasta/image/upload/v1722004937/absen_photos/11_aac3fc16-af66-4a1a-9767-9a3e7058b313_2024-07-26_21-42-14.png\",\n        \"userId\": 11,\n        \"createdAt\": \"2024-07-26T14:42:17.969Z\",\n        \"updatedAt\": \"2024-07-26T14:42:17.969Z\",\n        \"user\": {\n            \"id\": 11,\n            \"uuid\": \"ed14dede-2d61-4560-8a30-9c96313afde5\",\n            \"name\": \"maxsamasta\",\n            \"email\": \"adminmaxsamasta@gmail.com\",\n            \"username\": \"maxsamasta123\",\n            \"gender\": \"male\",\n            \"division\": \"UI/UX\",\n            \"position\": \"staff\",\n            \"role\": \"employee\",\n            \"urlprofile\": \"https://res.cloudinary.com/maxsamasta/image/upload/v1722004090/profile_photos/8fc8b3fe-569a-4c87-90f0-742dfea2c5a9_2024-07-26_21-28-06.png\",\n            \"resetPasswordToken\": null,\n            \"resetPasswordExpires\": null,\n            \"createdAt\": \"2024-07-26T14:28:10.440Z\",\n            \"updatedAt\": \"2024-07-26T14:28:10.440Z\"\n        }\n    }\n]"
+                  "body": "[\n    {\n        \"id\": 1,\n        \"uuid\": \"74eb8e67-f268-4039-af15-582a83b4838b\",\n        \"tapin\": \"2024-07-26T14:33:03.000Z\",\n        \"tapout\": null,\n        \"photo\": \"https://res.cloudinary.com/demo/image/upload/v1722004383/absen_photos/11_bf7951b2-9286-4429-8c98-cf64f8f1491a_2024-07-26_21-32-59.png\",\n        \"userId\": 11,\n        \"createdAt\": \"2024-07-26T14:33:03.419Z\",\n        \"updatedAt\": \"2024-07-26T14:33:03.419Z\",\n        \"user\": {\n            \"id\": 11,\n            \"uuid\": \"ed14dede-2d61-4560-8a30-9c96313afde5\",\n            \"name\": \"maxsamasta\",\n            \"email\": \"admin2@example.com\",\n            \"username\": \"maxsamasta123\",\n            \"gender\": \"male\",\n            \"division\": \"UI/UX\",\n            \"position\": \"staff\",\n            \"role\": \"employee\",\n            \"urlprofile\": \"https://res.cloudinary.com/demo/image/upload/v1722004090/profile_photos/8fc8b3fe-569a-4c87-90f0-742dfea2c5a9_2024-07-26_21-28-06.png\",\n            \"resetPasswordToken\": null,\n            \"resetPasswordExpires\": null,\n            \"createdAt\": \"2024-07-26T14:28:10.440Z\",\n            \"updatedAt\": \"2024-07-26T14:28:10.440Z\"\n        }\n    },\n    {\n        \"id\": 2,\n        \"uuid\": \"b408dc4b-2ef0-4880-ae03-5e7745df01f8\",\n        \"tapin\": \"2024-07-26T14:42:17.000Z\",\n        \"tapout\": null,\n        \"photo\": \"https://res.cloudinary.com/demo/image/upload/v1722004937/absen_photos/11_aac3fc16-af66-4a1a-9767-9a3e7058b313_2024-07-26_21-42-14.png\",\n        \"userId\": 11,\n        \"createdAt\": \"2024-07-26T14:42:17.969Z\",\n        \"updatedAt\": \"2024-07-26T14:42:17.969Z\",\n        \"user\": {\n            \"id\": 11,\n            \"uuid\": \"ed14dede-2d61-4560-8a30-9c96313afde5\",\n            \"name\": \"maxsamasta\",\n            \"email\": \"admin2@example.com\",\n            \"username\": \"maxsamasta123\",\n            \"gender\": \"male\",\n            \"division\": \"UI/UX\",\n            \"position\": \"staff\",\n            \"role\": \"employee\",\n            \"urlprofile\": \"https://res.cloudinary.com/demo/image/upload/v1722004090/profile_photos/8fc8b3fe-569a-4c87-90f0-742dfea2c5a9_2024-07-26_21-28-06.png\",\n            \"resetPasswordToken\": null,\n            \"resetPasswordExpires\": null,\n            \"createdAt\": \"2024-07-26T14:28:10.440Z\",\n            \"updatedAt\": \"2024-07-26T14:28:10.440Z\"\n        }\n    }\n]"
                 }
               ]
             },
@@ -1704,7 +1703,7 @@
                     }
                   ],
                   "cookie": [],
-                  "body": "[\n    {\n        \"id\": 1,\n        \"uuid\": \"74eb8e67-f268-4039-af15-582a83b4838b\",\n        \"tapin\": \"2024-07-26T14:33:03.000Z\",\n        \"tapout\": null,\n        \"photo\": \"https://res.cloudinary.com/maxsamasta/image/upload/v1722004383/absen_photos/11_bf7951b2-9286-4429-8c98-cf64f8f1491a_2024-07-26_21-32-59.png\",\n        \"userId\": 11,\n        \"createdAt\": \"2024-07-26T14:33:03.419Z\",\n        \"updatedAt\": \"2024-07-26T14:33:03.419Z\",\n        \"user\": {\n            \"id\": 11,\n            \"uuid\": \"ed14dede-2d61-4560-8a30-9c96313afde5\",\n            \"name\": \"maxsamasta\",\n            \"email\": \"adminmaxsamasta@gmail.com\",\n            \"username\": \"maxsamasta123\",\n            \"gender\": \"male\",\n            \"division\": \"UI/UX\",\n            \"position\": \"staff\",\n            \"role\": \"employee\",\n            \"urlprofile\": \"https://res.cloudinary.com/maxsamasta/image/upload/v1722004090/profile_photos/8fc8b3fe-569a-4c87-90f0-742dfea2c5a9_2024-07-26_21-28-06.png\",\n            \"resetPasswordToken\": null,\n            \"resetPasswordExpires\": null,\n            \"createdAt\": \"2024-07-26T14:28:10.440Z\",\n            \"updatedAt\": \"2024-07-26T14:28:10.440Z\"\n        }\n    },\n    {\n        \"id\": 2,\n        \"uuid\": \"b408dc4b-2ef0-4880-ae03-5e7745df01f8\",\n        \"tapin\": \"2024-07-26T14:42:17.000Z\",\n        \"tapout\": null,\n        \"photo\": \"https://res.cloudinary.com/maxsamasta/image/upload/v1722004937/absen_photos/11_aac3fc16-af66-4a1a-9767-9a3e7058b313_2024-07-26_21-42-14.png\",\n        \"userId\": 11,\n        \"createdAt\": \"2024-07-26T14:42:17.969Z\",\n        \"updatedAt\": \"2024-07-26T14:42:17.969Z\",\n        \"user\": {\n            \"id\": 11,\n            \"uuid\": \"ed14dede-2d61-4560-8a30-9c96313afde5\",\n            \"name\": \"maxsamasta\",\n            \"email\": \"adminmaxsamasta@gmail.com\",\n            \"username\": \"maxsamasta123\",\n            \"gender\": \"male\",\n            \"division\": \"UI/UX\",\n            \"position\": \"staff\",\n            \"role\": \"employee\",\n            \"urlprofile\": \"https://res.cloudinary.com/maxsamasta/image/upload/v1722004090/profile_photos/8fc8b3fe-569a-4c87-90f0-742dfea2c5a9_2024-07-26_21-28-06.png\",\n            \"resetPasswordToken\": null,\n            \"resetPasswordExpires\": null,\n            \"createdAt\": \"2024-07-26T14:28:10.440Z\",\n            \"updatedAt\": \"2024-07-26T14:28:10.440Z\"\n        }\n    }\n]"
+                  "body": "[\n    {\n        \"id\": 1,\n        \"uuid\": \"74eb8e67-f268-4039-af15-582a83b4838b\",\n        \"tapin\": \"2024-07-26T14:33:03.000Z\",\n        \"tapout\": null,\n        \"photo\": \"https://res.cloudinary.com/demo/image/upload/v1722004383/absen_photos/11_bf7951b2-9286-4429-8c98-cf64f8f1491a_2024-07-26_21-32-59.png\",\n        \"userId\": 11,\n        \"createdAt\": \"2024-07-26T14:33:03.419Z\",\n        \"updatedAt\": \"2024-07-26T14:33:03.419Z\",\n        \"user\": {\n            \"id\": 11,\n            \"uuid\": \"ed14dede-2d61-4560-8a30-9c96313afde5\",\n            \"name\": \"maxsamasta\",\n            \"email\": \"admin2@example.com\",\n            \"username\": \"maxsamasta123\",\n            \"gender\": \"male\",\n            \"division\": \"UI/UX\",\n            \"position\": \"staff\",\n            \"role\": \"employee\",\n            \"urlprofile\": \"https://res.cloudinary.com/demo/image/upload/v1722004090/profile_photos/8fc8b3fe-569a-4c87-90f0-742dfea2c5a9_2024-07-26_21-28-06.png\",\n            \"resetPasswordToken\": null,\n            \"resetPasswordExpires\": null,\n            \"createdAt\": \"2024-07-26T14:28:10.440Z\",\n            \"updatedAt\": \"2024-07-26T14:28:10.440Z\"\n        }\n    },\n    {\n        \"id\": 2,\n        \"uuid\": \"b408dc4b-2ef0-4880-ae03-5e7745df01f8\",\n        \"tapin\": \"2024-07-26T14:42:17.000Z\",\n        \"tapout\": null,\n        \"photo\": \"https://res.cloudinary.com/demo/image/upload/v1722004937/absen_photos/11_aac3fc16-af66-4a1a-9767-9a3e7058b313_2024-07-26_21-42-14.png\",\n        \"userId\": 11,\n        \"createdAt\": \"2024-07-26T14:42:17.969Z\",\n        \"updatedAt\": \"2024-07-26T14:42:17.969Z\",\n        \"user\": {\n            \"id\": 11,\n            \"uuid\": \"ed14dede-2d61-4560-8a30-9c96313afde5\",\n            \"name\": \"maxsamasta\",\n            \"email\": \"admin2@example.com\",\n            \"username\": \"maxsamasta123\",\n            \"gender\": \"male\",\n            \"division\": \"UI/UX\",\n            \"position\": \"staff\",\n            \"role\": \"employee\",\n            \"urlprofile\": \"https://res.cloudinary.com/demo/image/upload/v1722004090/profile_photos/8fc8b3fe-569a-4c87-90f0-742dfea2c5a9_2024-07-26_21-28-06.png\",\n            \"resetPasswordToken\": null,\n            \"resetPasswordExpires\": null,\n            \"createdAt\": \"2024-07-26T14:28:10.440Z\",\n            \"updatedAt\": \"2024-07-26T14:28:10.440Z\"\n        }\n    }\n]"
                 }
               ]
             }
@@ -1905,7 +1904,7 @@
   "variable": [
     {
       "key": "baseUrl",
-      "value": "https://farming-simulator.pstmn.io"
+      "value": "http://localhost:3000"
     }
   ]
 }
